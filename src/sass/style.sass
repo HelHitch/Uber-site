@@ -403,6 +403,16 @@ nav
 	height: 159px
 	&_wrapper
 		padding: 51px 0 44px
+		position: relative
+		&:before
+			position: absolute
+			left: 50%
+			top: 11px
+			transform: translateX(-50%)
+			content: ''
+			width: 301px
+			height: 7px
+			background: $main-color
 		.row
 			margin: 0
 		&_icons
@@ -422,6 +432,7 @@ nav
 			justify-content: center
 			text-transform: uppercase
 			text-align: center
+
 			.main_text
 				display: flex
 				justify-content: center
