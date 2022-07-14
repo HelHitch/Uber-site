@@ -66,7 +66,7 @@
             margin-top: 21px
     .mobile
         &_item
-            width: 220px
+            width: 246px
             height: 220px
             padding-top: 50px
             &_subtitle
@@ -74,7 +74,37 @@
                 line-height: 19px
             &_plus
                 top: 167px
-                left: 96px
+                left: 108px
+
+    .footer
+        &_wrapper
+            &_text
+                margin-bottom: 16px
+                .main_text
+                    justify-content: space-around
+                    .navigation
+
+                        margin: 0
+                        font-size: 14px
+                        line-height: 14px
+                .subtitle_text
+                    padding: 0 33px 0 38px
+                    justify-content: space-evenly
+                    flex-wrap: wrap
+                    font-size: 11px
+                    line-height: 11px
+                    .navigation2
+                        margin-bottom: 12px
+                .language
+                    margin-top: 5px
+
+            &_app
+                height: 100%
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+                .app-wrapper
+                    margin-right: 0
 @media (max-width: 768px)
     .menu
         position: fixed
@@ -121,7 +151,19 @@
         &_wrapper
             img
                 width: 100%
-
+    .mobile
+        &_item
+            padding: 80px 33px 123px 31px
+            width: 290px
+            height: 254px
+            margin-left: auto
+            margin-right: auto
+            &_subtitle
+                font-size: 18px
+                line-height: 31px
+            &_plus
+                top: 204px
+                left: 130px
     .hamburger
         display: block
         position: absolute
@@ -150,6 +192,16 @@
         display: none
     .xs-visible
         display: block
+    .footer
+        &_wrapper
+
+            &_icons
+                justify-content: center
+                margin-bottom: 19px
+                // margin-top: 45px
+            &_app
+                .app-wrapper
+                    margin-bottom: 7px
 
 @media (max-width: 576px)
     .subheader
@@ -177,31 +229,9 @@
             width: 103px
             height: 103px
             margin-bottom: 24px 0 27px
-    .mobile
 
-        paddin: 20px 0 43px
-        .title
-            font-size: 16px
-            line-height: 16px
-            margin-top: 14px
-        .subtitle
-            font-size: 14px
-            line-height: 21px
-        &_item
-            padding: 80px 33px 123px 31px
-            width: 290px
-            height: 254px
-            margin: 0 auto
-            margin-bottom: 30px
-            &_subtitle
-                font-size: 18px
-                line-height: 31px
-            &_plus
-                top: 204px
-                left: 130px
     .choise
         padding: 24px 0 31px
-        min-height: 393px
         .title, .subtitle
             display: none
 
@@ -262,45 +292,6 @@
             height: 50px
             margin-top: 0
     .footer
-        min-height: 255px
-        padding: 0 18px 0 17px
         &_wrapper
-
-            flex-direction: column
-            padding: 0
-            position: relative
-            &::before
-                top: 25px
-                width: 253px
-                height: 4px
-            .col-md-4
-                padding: 0
             &_text
                 margin-bottom: 16px
-                min-width: 285px
-                .main_text
-                    justify-content: space-between
-                    padding-top: 51px
-                    .navigation
-
-                        margin: 0
-                        font-size: 14px
-                        line-height: 14px
-                .subtitle_text
-                    justify-content: space-between
-                    flex-wrap: wrap
-                    font-size: 11px
-                    line-height: 11px
-                    .navigation2
-                        margin-bottom: 12px
-                .language
-                    margin-top: 5px
-            &_icons
-                justify-content: center
-                margin-bottom: 19px
-            &_app
-                justify-content: space-between
-                padding: 0
-                margin-bottom: 29px
-                img
-                    width: 100%
