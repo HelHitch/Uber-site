@@ -45,12 +45,17 @@
             height: 30px
             font-size: 10px
             margin-top: 25px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     .promo
         &_header
             font-size: 40px
         &_subheader
             line-height: 30px
             line-height: 45px
+        &_btn
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     .reasons
         .title
             font-size: 30px
@@ -86,11 +91,14 @@
             left: 0
 
         &_item
+            width: 100%
+            text-align: center
             border: 0
             padding-right: 0
             margin: 20px 0
         &_link
             font-size: 20px
+            display: block
 
     .subheader
         &_logo
@@ -183,6 +191,7 @@
             padding: 80px 33px 123px 31px
             width: 290px
             height: 254px
+            margin: 0 auto
             margin-bottom: 30px
             &_subtitle
                 font-size: 18px
